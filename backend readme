@@ -1,0 +1,8 @@
+Ok so this is for testing the paramterising of routers so ill keep this short. theres a .env in the backend files its important its there and contains basic router like before, its imperative you do the following command:
+--pip install python-dotenv
+
+Dotenv is required to use os which is imported in the .config file.
+
+**NOTE** before starting the backend ensure the .env file has your routers correct information!!!!!!1
+
+After that simply startup the backend and once you start the frontend you should see some messages of whether or not the program successfully shhed into the router!
