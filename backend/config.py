@@ -1,6 +1,11 @@
-ROUTER_IP = "192.168.1.1"
-USERNAME = "root"
-PASSWORD = "Paulo@123"
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
+ROUTER_IP = os.getenv("ROUTER_IP")
+USERNAME = os.getenv("ROUTER_USERNAME")
+PASSWORD = os.getenv("ROUTER_PASSWORD")
 
 COMMANDS = {
     "cpu_usage": "top -bn1 | grep 'CPU:'",
