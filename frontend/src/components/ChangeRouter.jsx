@@ -136,16 +136,18 @@ const ChangeRouter = () => {
             />
           </div>
 
-        </div>
-
-
           <div
             className="button"
-            style={{ alignSelf: 'flex-start' }}
+            style={{ alignSelf: 'center' }}
             onClick={handleAdd}
           >
             Add
           </div>
+
+        </div>
+
+
+          
 
         </div>
       </div>
