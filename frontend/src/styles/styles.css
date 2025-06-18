@@ -246,6 +246,14 @@ body {
 
 }
 
+select {
+  color: #000; /* fallback default color */
+}
+
+select:invalid {
+  color: #8E8E8E;
+}
+
 
 
 /******* CUSTOM BOOTSRAP MARGIN-TOP CSS *******/

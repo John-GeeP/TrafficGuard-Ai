@@ -29,7 +29,7 @@ const AccessibilityCard = () => {
 
       <div className="card-body">
 
-      <h11>Text Scale</h11>
+      <h11>Text Scale (Beta)</h11>
 
         <div className="slider-container"
 

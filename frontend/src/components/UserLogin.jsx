@@ -1,4 +1,4 @@
-// src/components/UserLogin.jsx
+ // src/components/UserLogin.jsx
 import React, { useState } from 'react';
 import { useRouter } from '../context/RouterContext';
 
@@ -44,30 +44,69 @@ const UserLogin = () => {
   };
 
   return (
-    <div className="card mb-2" style={{ maxWidth: '100%', minWidth: '80%' }}>
-      <div
-        className="card-body"
-        style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}
-      >
-        <label className="fw-bold">Username</label>
-        <input
-          type="text"
-          className="custom-input"
-          placeholder="e.g. root"
-          value={username}
-          onChange={e => setUsername(e.target.value)}
-        />
+    <div className="card mb-2" 
+      style={{ 
+        maxWidth: '100%', 
+        minWidth: '80%', /* Prevents box from collapsing */
+        width: '100%',
+        height: 'auto',
+      }}>
 
-        <label className="fw-bold">Password</label>
-        <input
-          type="password"
-          className="custom-input"
-          placeholder="e.g. goodlife"
-          value={password}
-          onChange={e => setPassword(e.target.value)}
-        />
+      <div className="card-body"
+        style={{ 
+          marginLeft: '10px',
+          display: 'flex', /* Allows for vertical stack */
+          flexDirection: 'column', /* Allows for vertical stack */
+          gap: '10px' 
+        }}>
 
-        <div
+
+        <label><h11>Username:</h11></label>
+        <div class="text-box"
+
+          style={{
+            height: '50px',
+            width: '70%',
+          }}>
+
+          <input
+            type="text"
+            className="custom-input"
+            placeholder="e.g. User01"
+            value={username}
+            onChange={e => setUsername(e.target.value)}
+          />
+        </div>
+
+        <label><h11>Password:</h11></label>
+        <div 
+          style={{
+
+            display: 'flex',
+            flexDirection: 'row',
+            alignItems: 'center',
+            gap: '30px'
+
+          }}>
+
+          <div class="text-box"
+            style={{
+              height: '50px',
+              weight: '70%',
+            }}>
+
+        
+            <input
+              type="password"
+              className="custom-input"
+              placeholder="e.g. Password"
+              value={password}
+              onChange={e => setPassword(e.target.value)}
+            />
+    
+          </div>
+
+          <div
           className="button"
           onClick={handleLogin}
           style={{
@@ -78,6 +117,11 @@ const UserLogin = () => {
         >
           {loading ? 'Logging in…' : 'Login'}
         </div>
+
+        </div>
+
+
+        
 
         {status && (
           <div

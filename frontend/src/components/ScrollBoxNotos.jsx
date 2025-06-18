@@ -3,7 +3,7 @@ import React from 'react';
 const ScrollBoxNotos = ({
 
   children,
-  height = '500px',
+  height = 'calc(100vh - 450px)',
   width = '94%',
   backgroundColor = '#F9F8F8',
 

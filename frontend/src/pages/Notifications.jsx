@@ -58,6 +58,11 @@ function Notifications(){
                         <NotificationCards />
                         <NotificationCards />
                         <NotificationCards />
+                        <NotificationCards />
+                        <NotificationCards />
+                        <NotificationCards />
+                        <NotificationCards />
+                        <NotificationCards />
                     </div>
                 </ScrollBoxNotos>
 
