@@ -19,8 +19,8 @@ const ThemeCard = () => {
 
           /* Box CSS */
           maxWidth: '100%',
-          minWidth: '80%', /* Prevents the box from collapsing */
-          width: '100px',
+          minWidth: '60%', /* Prevents the box from collapsing */
+          width: '450px',
           height: 'auto',
 
       }}> {/* className = "card mb-2" */}

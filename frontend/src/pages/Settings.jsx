@@ -11,7 +11,7 @@ import { useRouter } from '../context/RouterContext';
 import AccessibilityCard from '../components/AccessibilityCard';
 
 function Settings() {
-  const { routers, activeIndex, selectRouter, deleteRouter } = useRouter();
+  // const { routers, activeIndex, selectRouter, deleteRouter } = useRouter();
 
   return (
 

@@ -50,7 +50,7 @@ const UserLogin = () => {
       style={{ 
         maxWidth: '100%', 
         minWidth: '80%', /* Prevents box from collapsing */
-        width: '100%',
+        width: '85%',
         height: 'auto',
       }}>
 
@@ -68,7 +68,7 @@ const UserLogin = () => {
 
           style={{
             height: '50px',
-            width: '70%',
+            width: '56%',
           }}>
 
           <input

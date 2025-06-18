@@ -6,6 +6,9 @@ import ScrollBoxRouter from './ScrollBoxRouter';
 
 const ChangeRouter = () => {
 
+  // For Router Select Box
+  const { routers, activeIndex, selectRouter, deleteRouter } = useRouter();
+
   //Brand & Models Dropdown Menu .js
   const brands = ['GL.iNet'];
   const models = ['Mango', 'BerylAX'];
@@ -28,6 +31,7 @@ const ChangeRouter = () => {
   };
 
   return (
+    
 
     <div className="card mb-3" style={{ maxWidth: '100%', width: '90%' }}>
       <div className="card-body"
@@ -40,14 +44,20 @@ const ChangeRouter = () => {
         }}>
 
         {/* Select Router Section */}
-
-
         
         <h11>Select Router</h11>
         
-          {/* ROUTER BOX HERE */}
+          <ScrollBoxRouter
+              routers={routers}
+              selectedIndex={activeIndex}
+              onSelect={selectRouter}
+              onDelete={deleteRouter}
+            />
 
 
+
+
+        {/* Add Router Section */}
 
         <h11>Add Router</h11>
 
