@@ -178,6 +178,7 @@ body {
 }/* Placeholder text */
 
 
+
 /******* CUSTOM DROPDOWN MENU CSS *******/
 
 .dropbtn {
@@ -246,12 +247,30 @@ body {
 
 }
 
-select {
-  color: #000; /* fallback default color */
-}
+.custom-dropdown{
 
-select:invalid {
-  color: #8E8E8E;
+  border: none;
+  background: transparent;
+  outline: none;
+  font-family: 'Inter';
+  font-size: 24px;
+  font-weight: 300;
+  color: #333333; 
+  width: 100%;
+
+} /* Text inside dropdown menu*/
+
+.custom-dropdown:invalid{
+
+  color:#8E8E8E;
+  text-align: center;
+
+} /* Dropdown default text */
+
+.custom-dropdown option{
+
+  color:#333333;
+
 }
 
 

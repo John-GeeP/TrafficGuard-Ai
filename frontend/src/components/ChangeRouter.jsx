@@ -1,3 +1,5 @@
+// Change Router component on the Settings Page
+
 import React, { useState } from 'react';
 import { useRouter } from '../context/RouterContext';
 import ScrollBoxRouter from './ScrollBoxRouter';
@@ -63,12 +65,13 @@ const ChangeRouter = () => {
           <div className="dropdown" style={{ position: 'relative' }}>
             <button className='dropbtn'>
               <select
-                className="custom-input"
+                className="custom-dropdown"
                 value={brand}
                 onChange={e => setBrand(e.target.value)}
+                required
               >
                 <option value="" disabled hidden>-- Select --</option>
-                {brands.map((b, i) => (<option key={i} value={b}>{b}</option>))}
+                {brands.map((b, i) => <option key={i} value={b}>{b}</option>)}
               </select>
             </button>
           </div>
@@ -89,14 +92,15 @@ const ChangeRouter = () => {
 
           <h10 style={{ marginLeft: '25px'}}>Router Model</h10>
           <div className="dropdown">
-            <button className='dropbtn' style={{ marginLeft: '35px'}}>
+            <button className='dropbtn' style={{ marginLeft: '35px' }}>
               <select
-                className="custom-input"
+                className="custom-dropdown"
                 value={model}
                 onChange={e => setModel(e.target.value)}
+                required
               >
                 <option value="" disabled hidden>-- Select --</option>
-                {models.map((m, i) => (<option key={i} value={m}>{m}</option>))}
+                {models.map((m, i) => <option key={i} value={m}>{m}</option>)}
               </select>
             </button>
           </div>
